@@ -1,11 +1,8 @@
 /* eslint-disable react/no-unstable-nested-components */
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import HomeScreen from '../drawerScreens/HomeScreen';
-import { TabRouter } from '@react-navigation/native';
-import ProfileScreen from '../drawerScreens/ProfileScreen';
-import SettingsScreen from '../drawerScreens/SettingsScreen';
 import Sidebar from '../Sidebar';
 
 const Drawer = createDrawerNavigator();
@@ -24,7 +21,7 @@ const MainScreen = () => {
                     drawerIcon: ({ color, size }) => (
                         <Text style={{ color, fontSize: size }}>🏠</Text>
                     ),
-                    headerShown: TabRouter,
+                    headerShown: false,
                 }}
             />
 
