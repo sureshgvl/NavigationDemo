@@ -27,26 +27,7 @@ const MainScreen = () => {
                     headerShown: TabRouter,
                 }}
             />
-            <Drawer.Screen
-                name="Profile"
-                component={ProfileScreen}
-                options={{
-                    drawerIcon: ({ color, size }) => (
-                        <Text style={{ color, fontSize: size }}>👤</Text>
-                    ),
-                    headerShown: TabRouter,
-                }}
-            />
-            <Drawer.Screen
-                name="Settings"
-                component={SettingsScreen}
-                options={{
-                    drawerIcon: ({ color, size }) => (
-                        <Text style={{ color, fontSize: size }}>⚙️</Text>
-                    ),
-                    headerShown: TabRouter,
-                }}
-            />
+
         </Drawer.Navigator>
     );
 };
